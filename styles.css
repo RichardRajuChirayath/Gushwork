@@ -1279,9 +1279,10 @@ section {
 }
 
 .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    display: flex;
+    justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
     margin-top: 50px;
 }
 
@@ -1292,7 +1293,9 @@ section {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 35px;
+    width: 100%;
+    max-width: 400px; /* Keeping cards uniform */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1302,9 +1305,10 @@ section {
 }
 
 .portfolio-card h3 {
-    font-size: 24px;
+    font-size: 26px;
+    font-weight: 800;
     color: #0F172A;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     line-height: 1.2;
 }
 
@@ -1312,15 +1316,16 @@ section {
     color: #64748B;
     font-size: 15px;
     line-height: 1.6;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    min-height: 80px; /* Ensure text fields stay uniform */
 }
 
 .portfolio-card .card-image {
     width: 100%;
-    height: 200px;
-    border-radius: 16px;
+    height: 220px; /* Professional 'proper' height */
+    border-radius: 20px;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .portfolio-card .card-image img {
@@ -1329,16 +1334,23 @@ section {
     object-fit: cover;
 }
 
+.card-action {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
 .btn-learn-more {
     width: 100%;
-    padding: 14px;
+    padding: 16px;
     background: #F1F5F9;
     border: none;
     border-radius: 12px;
     color: #2A388F;
     font-weight: 700;
+    font-size: 15px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .btn-learn-more:hover {

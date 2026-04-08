@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+
 /* Design System */
 :root {
     --primary-blue: #2A388F;
@@ -35,6 +37,11 @@ body {
 
 section {
     padding: 100px 0;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+#contact, .footer {
+    border-bottom: none;
 }
 
 .gray-bg { background-color: #F1F5F9; }

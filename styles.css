@@ -1390,6 +1390,58 @@ section {
     background: #1E2A78;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.max-800 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- Resources Box --- */
+.resource-box {
+    background: white;
+    border: 1px solid #E2E8F0;
+    border-radius: 20px;
+    margin-top: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.resource-row {
+    padding: 24px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #F1F5F9;
+}
+
+.resource-row:last-child {
+    border-bottom: none;
+}
+
+.res-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1E293B;
+}
+
+.res-link {
+    color: #2A388F;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+}
+
+.res-icon {
+    font-size: 18px;
+}
+
 .trusted-by-section p {
     color: #64748B;
     font-size: 14px;

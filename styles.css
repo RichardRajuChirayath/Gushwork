@@ -1222,17 +1222,19 @@ section {
 .trusted-by-section {
     width: 100%;
     margin-top: 60px;
-    padding-top: 40px;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 60px 0;
+    background: #F8FAFC;
+    border-top: 1px solid #E2E8F0;
     text-align: center;
 }
 
 .trusted-by-section p {
-    color: #94A3B8;
+    color: #64748B;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 30px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .logo-row {
@@ -1246,9 +1248,13 @@ section {
 .logo-row img {
     height: 35px;
     width: auto;
-    filter: brightness(0) invert(1);
-    opacity: 0.6;
-    transition: opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8;
+}
+
+.logo-row img:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 /* --- Price Range Card --- */

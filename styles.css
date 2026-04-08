@@ -1517,61 +1517,100 @@ section {
 
 @media (max-width: 768px) {
     section {
-        padding: 60px 0;
+        padding: 50px 0;
     }
 
     .serif-title {
-        font-size: 32px;
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    /* Container adjustment for mobile */
+    .container {
+        padding: 0 16px;
+    }
+
+    /* Header Mobile Fix */
+    .header {
+        height: 70px;
     }
 
     .nav-links {
-        display: none; /* Mobile menu can be added here */
+        display: none;
     }
 
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .portfolio-help-bar {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-
-    .btn-expert {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .logo-row {
+    /* Hero Mobile Fix */
+    .hero-grid {
         gap: 30px;
-        justify-content: center;
     }
 
-    .logo-row img {
-        height: 25px;
+    .certification-badges {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
     }
 
-    .container {
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .serif-title {
-        font-size: 28px;
+    .badge-item {
+        width: 100%;
+        max-width: 200px;
     }
 
-    .pricing-header h2 {
-        font-size: 24px;
+    /* Price Card Mobile Fix */
+    .price-range-card {
+        width: 100%;
+        padding: 20px;
+        border-radius: 16px;
     }
 
     .price-range {
         font-size: 32px;
     }
 
-    .certification-badges {
-        flex-direction: column;
-        align-items: center;
+    .pricing-features {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    /* Portfolio Mobile Fix */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .portfolio-card {
+        padding: 20px;
+    }
+
+    .portfolio-card .card-image {
+        height: 180px;
+    }
+
+    .portfolio-help-bar {
+        padding: 30px 20px;
+    }
+
+    /* Trusted By Mobile */
+    .logo-row {
+        gap: 20px;
+    }
+
+    .logo-row img {
+        height: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-contact, .btn-expert, .btn-learn-more {
+        width: 100% !important;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .help-text h3 {
+        font-size: 20px;
     }
 }

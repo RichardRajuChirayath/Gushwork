@@ -1279,11 +1279,22 @@ section {
 }
 
 .portfolio-grid {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    flex-wrap: wrap;
     margin-top: 50px;
+}
+
+@media (max-width: 1100px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .portfolio-card {
@@ -1294,8 +1305,6 @@ section {
     display: flex;
     flex-direction: column;
     padding: 35px;
-    width: 100%;
-    max-width: 400px; /* Keeping cards uniform */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1404,6 +1413,16 @@ section {
 
 .text-center {
     text-align: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mt-40 {
+    margin-top: 40px;
 }
 
 .max-800 {

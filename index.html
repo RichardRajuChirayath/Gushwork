@@ -21,8 +21,8 @@
         <div id="hero-container"></div>
         <div id="specs-container"></div>
         <div id="features-container"></div>
-        <div id="applications-container"></div>
         <div id="faq-container"></div>
+        <div id="applications-container"></div>
         <div id="contact-container"></div>
     </main>
 
@@ -46,10 +46,12 @@
             await loadSection('hero-container', 'sections/hero.html');
             await loadSection('specs-container', 'sections/specs.html');
             await loadSection('features-container', 'sections/features.html');
-            await loadSection('applications-container', 'sections/applications.html');
             await loadSection('faq-container', 'sections/faq.html');
+            await loadSection('applications-container', 'sections/applications.html');
             await loadSection('contact-container', 'sections/contact.html');
             await loadSection('footer-container', 'sections/footer.html');
+
+
             
             // Re-initialize scripts after content is loaded
             if (window.initApp) window.initApp();

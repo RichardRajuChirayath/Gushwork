@@ -1488,3 +1488,90 @@ section {
     justify-content: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
+/* --- Responsive Design --- */
+
+@media (max-width: 1024px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-content {
+        order: 1;
+    }
+
+    .hero-visual {
+        order: 2;
+    }
+
+    .certification-badges {
+        justify-content: center;
+    }
+
+    .price-range-card {
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+
+    .serif-title {
+        font-size: 32px;
+    }
+
+    .nav-links {
+        display: none; /* Mobile menu can be added here */
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-help-bar {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .btn-expert {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo-row {
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .logo-row img {
+        height: 25px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .serif-title {
+        font-size: 28px;
+    }
+
+    .pricing-header h2 {
+        font-size: 24px;
+    }
+
+    .price-range {
+        font-size: 32px;
+    }
+
+    .certification-badges {
+        flex-direction: column;
+        align-items: center;
+    }
+}

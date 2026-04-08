@@ -6,7 +6,7 @@
     <title>Mangalam HDPE Pipes - Premium Infrastructure Solutions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +15,8 @@
     <header id="main-header" class="header">
         <div class="container container-wide">
             <div class="logo">
-                <img src="placeholder-logo.png" alt="Mangalam HDPE Pipes" class="logo-img">
+                <h2 style="margin:0; font-size:24px; color:#2A388F; font-weight:700;">MANGALAM</h2>
+                <p style="margin:-4px 0 0 0; font-size:11px; font-weight:bold; color:#2A388F; letter-spacing:1px;">HDPE PIPES</p>
             </div>
             <nav class="nav-links">
                 <a href="#about">About Us</a>
@@ -35,9 +36,7 @@
                     <div class="hero-carousel">
                         <div class="breadcrumb">Products > Two For One Twister</div>
                         <div class="carousel-main zoom-container">
-                            <div class="carousel-placeholder">
-                                <span>Product Showcase Image</span>
-                            </div>
+                            <img src="assets/hero.jpg" alt="Mangalam HDPE Pipes" class="zoom-img" id="hero-main-img">
                             <!-- Navigation Arrows -->
                             <div class="carousel-nav">
                                 <button class="nav-btn prev">&#10094;</button>
@@ -47,7 +46,7 @@
                             <div class="zoom-result"></div>
                         </div>
                         <div class="carousel-thumbs">
-                            <div class="thumb active"></div>
+                            <div class="thumb active" style="background-image: url('assets/hero.jpg'); background-size: cover;"></div>
                             <div class="thumb"></div>
                             <div class="thumb"></div>
                             <div class="thumb"></div>
@@ -57,25 +56,27 @@
                     </div>
                     <div class="hero-info">
                         <div class="certifications">
-                            <div class="cert-item"><span class="m-icon">M</span> BIS Certified</div>
-                            <div class="cert-item">🛡️ ISO Certified</div>
-                            <div class="cert-item">🇪🇺 CE Certified</div>
+                            <div class="cert-item" style="border:1px solid #E2E8F0; padding:10px 24px; border-radius:100px; font-size:13px; color:#4A5568; font-weight:600; background:white; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); display:flex; align-items:center;"><span style="color:#2A388F; font-weight:800; margin-right:8px; font-size:16px;">M</span> BIS Certified</div>
+                            <div class="cert-item" style="border:1px solid #E2E8F0; padding:10px 24px; border-radius:100px; font-size:13px; color:#4A5568; font-weight:600; background:white; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); display:flex; align-items:center;">🎯 ISO Certified</div>
+                            <div class="cert-item" style="border:1px solid #E2E8F0; padding:10px 24px; border-radius:100px; font-size:13px; color:#4A5568; font-weight:600; background:white; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); display:flex; align-items:center;">⚖️ CE Certified</div>
                         </div>
                         <h1>Premium HDPE Pipes & Coils for Modern Infrastructure</h1>
+                        <p>Our HDPE pipes are engineered for durability and high-performance across various industrial applications. Certified to meet the highest standards of safety and sustainability.</p>
                         <ul class="features-list">
-                            <li>Leak-Proof Fusion Joints</li>
-                            <li>Chemical Resistance</li>
-                            <li>50+ Year Service Life</li>
-                            <li>Flexible Installation</li>
+                            <li><span>✓</span> Leak-Proof Fusion Joints</li>
+                            <li><span>✓</span> Chemical Resistance</li>
+                            <li><span>✓</span> 50+ Year Service Life</li>
+                            <li><span>✓</span> Flexible Installation</li>
+                            <li><span>✓</span> UV Radiation Protection</li>
                         </ul>
                         <div class="price-box">
-                            <span class="label">Price Range</span>
-                            <div class="price">₹4,80,000 - 7,90,000</div>
-                            <div class="price-tags">
-                                <span class="tag">Shipping: 6-12 days</span>
-                                <span class="tag">Returns: If returned within 7 days</span>
+                            <p class="price-label">Price Range</p>
+                            <h2 class="price-value">₹4,80,000 - 7,90,000</h2>
+                            <div class="price-tags-container">
+                                <div class="tag-orange">SHIPPING: 6-12 DAYS</div>
+                                <div class="tag-blue">RETURNS: 7 DAYS</div>
                             </div>
-                            <p class="cert-note">Certifications: ISO Certified, BIS Certified</p>
+                            <p class="cert-footer-note">Certifications: <span class="cert-span">ISO Certified</span> <span class="cert-span">BIS Certified</span></p>
                         </div>
                         <div class="action-btns">
                             <button class="btn-primary">Get Custom Quote</button>
@@ -83,40 +84,32 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="trusted-bar">
-                    <p>Trusted by Hundreds of Companies Globally</p>
-                    <div class="logos-grid">
-                        <div class="brand">EUROFLEX</div>
-                        <div class="brand">EUROFLEX</div>
-                        <div class="brand">EUROFLEX</div>
-                        <div class="brand">EUROFLEX</div>
-                        <div class="brand">EUROFLEX</div>
-                        <div class="brand">EUROFLEX</div>
-                    </div>
-                </div>
             </div>
         </section>
 
         <!-- Section 2: Technical Specifications (Dark) -->
-        <section class="tech-specs dark-bg">
+        <section class="tech-specs dark-bg" id="specs">
             <div class="container">
                 <div class="section-header">
                     <h2>Technical Specifications at a Glance</h2>
                     <p>Comprehensive performance data demonstrating our commitment to quality and engineering excellence.</p>
                 </div>
                 <table class="specs-table">
-                    <tr><th>PARAMETER</th><th>SPECIFICATION</th></tr>
-                    <tr><td>Pipe Diameter Range</td><td>20mm to 1600mm (3/4" to 63")</td></tr>
-                    <tr><td>Pressure Ratings</td><td>PN 2.5, PN 4, PN 6, PN 8, PN 10, PN 12.5, PN 16</td></tr>
-                    <tr><td>Standard Dimension Ratio</td><td>SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11</td></tr>
-                    <tr><td>Operating Temperature</td><td>-40C to +80C (-40F to +176F)</td></tr>
-                    <tr><td>Service Life</td><td>50+ Years (at 20 degrees C, PN 10)</td></tr>
-                    <tr><td>Material Density</td><td>0.95 - 0.96 g/cm3</td></tr>
-                    <tr><td>Certification Standards</td><td>IS 5984, ISO 4427, ASTM D3035</td></tr>
-                    <tr><td>Joint Type</td><td>Butt Fusion, Electrofusion, Mechanical</td></tr>
-                    <tr><td>Coil Lengths</td><td>Up to 500m (for smaller diameters)</td></tr>
-                    <tr><td>Country of Origin</td><td>🇮🇳 India</td></tr>
+                    <thead>
+                        <tr><th>PARAMETER</th><th>SPECIFICATION</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Pipe Diameter Range</td><td>20mm to 1600mm (3/4" to 63")</td></tr>
+                        <tr><td>Pressure Ratings</td><td>PN 2.5, PN 4, PN 6, PN 8, PN 10, PN 12.5, PN 16</td></tr>
+                        <tr><td>Standard Dimension Ratio</td><td>SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11</td></tr>
+                        <tr><td>Operating Temperature</td><td>-40C to +80C (-40F to +176F)</td></tr>
+                        <tr><td>Service Life</td><td>50+ Years (at 20 degrees C, PN 10)</td></tr>
+                        <tr><td>Material Density</td><td>0.95 - 0.96 g/cm3</td></tr>
+                        <tr><td>Certification Standards</td><td>IS 5984, ISO 4427, ASTM D3035</td></tr>
+                        <tr><td>Joint Type</td><td>Butt Fusion, Electrofusion, Mechanical</td></tr>
+                        <tr><td>Coil Lengths</td><td>Up to 500m (for smaller diameters)</td></tr>
+                        <tr><td>Country of Origin</td><td>🇮🇳 India</td></tr>
+                    </tbody>
                 </table>
                 <div class="action-center">
                     <button class="btn-download">📥 Download Full Technical Datasheet</button>
@@ -137,7 +130,6 @@
                         <h3>Superior Chemical Resistance</h3>
                         <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they won't corrode, rust, or scale.</p>
                     </div>
-                    <!-- Repeat for 6 cards -->
                     <div class="feat-card">
                         <div class="icon-m">🧪</div>
                         <h3>Exceptional Flexibility & Durability</h3>
@@ -199,14 +191,14 @@
                         </ul>
                     </div>
                     <div class="process-image">
-                        <div class="image-placeholder">Process Phase Image</div>
+                        <div class="image-box" style="background-image: url('assets/hero.jpg'); background-size: cover; background-position: center; border-radius: 12px; height: 300px;"></div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Section 5: Applications Carousel -->
-        <section class="applications">
+        <section class="applications" id="applications">
             <div class="container">
                 <div class="flex-header">
                     <div class="section-title">
@@ -220,24 +212,24 @@
                 </div>
                 <div class="apps-grid">
                     <div class="app-card">
-                        <div class="app-img">Image Placeholder</div>
+                        <div class="app-img" style="background-image: url('assets/hero.jpg');"></div>
                         <div class="app-info">
-                            <h3>Fishnet Manufacturing</h3>
-                            <p>High-performance twisting solutions for packaging yarn, strapping, and more.</p>
+                            <h3>Infrastructure</h3>
+                            <p>Reliable water distribution and sewage systems for urban development.</p>
                         </div>
                     </div>
                     <div class="app-card">
-                        <div class="app-img">Image Placeholder</div>
+                        <div class="app-img" style="background-image: url('assets/hero.jpg');"></div>
                         <div class="app-info">
-                            <h3>Fishnet Manufacturing</h3>
-                            <p>High-performance twisting solutions for packaging yarn, strapping, and more.</p>
+                            <h3>Agriculture</h3>
+                            <p>Efficient drip irrigation and borehole piping for sustainable farming.</p>
                         </div>
                     </div>
                     <div class="app-card">
-                        <div class="app-img">Image Placeholder</div>
+                        <div class="app-img" style="background-image: url('assets/hero.jpg');"></div>
                         <div class="app-info">
-                            <h3>Fishnet Manufacturing</h3>
-                            <p>High-performance twisting solutions for packaging yarn, strapping, and more.</p>
+                            <h3>Industrial</h3>
+                            <p>Corrosion-resistant piping for chemical and mining operations.</p>
                         </div>
                     </div>
                 </div>
@@ -245,19 +237,24 @@
         </section>
 
         <!-- Section 6: FAQ -->
-        <section class="faq-section gray-bg">
+        <section class="faq-section gray-bg" id="faq">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
                 <div class="accordion">
                     <div class="acc-item active">
-                        <div class="acc-header">What is the purpose of a laser cutter for sheet metal? <span class="acc-icon"></span></div>
-                        <div class="acc-content">It is designed to cut various types of sheet metal with precision, allowing for intricate designs and shapes that are essential in manufacturing processes.</div>
+                        <div class="acc-header">What is the lifespan of HDPE pipes? <span class="acc-icon"></span></div>
+                        <div class="acc-content">Mangalam HDPE pipes are designed for a service life of 50+ years under standard operating conditions, due to their superior resistance to corrosion and environmental factors.</div>
                     </div>
                     <div class="acc-item">
-                        <div class="acc-header">What are the benefits of using aluminum tubing in manufacturing? <span class="acc-icon"></span></div>
-                        <div class="acc-content">Aluminum tubing is lightweight yet durable, making it ideal for aerospace, automotive, and construction industries.</div>
+                        <div class="acc-header">Are these pipes suitable for drinking water? <span class="acc-icon"></span></div>
+                        <div class="acc-content">Yes, our HDPE pipes are food-grade and BIS certified for potable water distribution, ensuring they do not impart any taste or odor to the water.</div>
                     </div>
-                    <!-- More items -->
+                    <div class="acc-item">
+                        <div class="acc-header">How do HDPE pipes handle extreme temperatures? <span class="acc-icon"></span></div>
+                        <div class="acc-content">Our pipes remain flexible and durable in temperatures ranging from -40°C to +80°C, making them ideal for diverse climates.</div>
+                    </div>
                 </div>
                 
                 <div class="catalogue-promo">
@@ -274,12 +271,12 @@
         </section>
 
         <!-- Section 7: Ready to Transform (Blue Box) -->
-        <section class="transform-section container">
+        <section class="transform-section container" id="contact">
             <div class="transform-box">
                 <div class="t-left">
-                    <h2>Ready to Transform Your Textile Manufacturing?</h2>
-                    <p>Get a personalized consultation and quote for machinery solutions tailored to your specific production requirements.</p>
-                    <p class="phone-link">For immediate assistance, feel free to give us a direct call at <strong>+91-XXX-XXX-XXXX</strong>.</p>
+                    <h2>Ready to Build Reliable Infrastructure?</h2>
+                    <p>Get a personalized consultation and quote for piping solutions tailored to your specific project requirements.</p>
+                    <p class="phone-link">For immediate assistance, call us at <strong>+91-987-654-3210</strong>.</p>
                 </div>
                 <div class="t-right">
                     <div class="contact-card">
@@ -288,7 +285,7 @@
                             <input type="text" placeholder="Full Name">
                             <input type="text" placeholder="Company Name">
                             <input type="email" placeholder="Email Address">
-                            <input type="tel" placeholder="+91 7003026616">
+                            <input type="tel" placeholder="+91 9876543210">
                             <button class="btn-submit">Request Custom Quote</button>
                         </form>
                     </div>
@@ -301,8 +298,9 @@
     <footer class="main-footer">
         <div class="container">
             <div class="footer-top">
-                <div class="brand-side">
-                    <img src="placeholder-logo.png" alt="Logo" class="f-logo">
+                <div class="brand-side" style="color:#2A388F;">
+                    <h2 style="margin:0; font-size:24px; font-weight:700;">MANGALAM</h2>
+                    <p style="margin:-4px 0 0 0; font-size:11px; font-weight:bold; letter-spacing:1px;">HDPE PIPES</p>
                 </div>
                 <div class="promo-tag">
                     <p>Premium <strong>HDPE Pipes & Fittings Manufacturer</strong> in South India</p>
@@ -311,42 +309,43 @@
             <div class="footer-grid">
                 <div class="f-col">
                     <h4>About Us</h4>
-                    <ul><li>About Us</li></ul>
-                </div>
-                <div class="f-col">
-                    <h4>Categories</h4>
                     <ul>
-                        <li>Packaging Industry Solutions</li>
-                        <li>Fishnet Manufacturing</li>
-                        <li>PPMF/Tapes and Twines</li>
-                        <li>FIBC and Woven Sack</li>
-                        <li>Carpet and Rugs Industry</li>
-                        <li>Technical Textiles</li>
+                        <li><a href="#">Company Profile</a></li>
+                        <li><a href="#">Our Infrastructure</a></li>
+                        <li><a href="#">Quality Policy</a></li>
                     </ul>
                 </div>
                 <div class="f-col">
-                    <h4>Products</h4>
+                    <h4>Sectors</h4>
                     <ul>
-                        <li>Two For One Twister</li>
-                        <li>TPRS Twister Machine</li>
-                        <li>Ring Twisting Machines</li>
-                        <li>Covering Machines</li>
-                        <li>Heat Setting Equipment</li>
-                        <li>Servo Controlled Winders</li>
+                        <li><a href="#">Urban Water Supply</a></li>
+                        <li><a href="#">Micro Irrigation</a></li>
+                        <li><a href="#">Industrial Effluents</a></li>
+                        <li><a href="#">Mining Solutions</a></li>
+                        <li><a href="#">Cable Ducting</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Product Catalog</a></li>
+                        <li><a href="#">Installation Guide</a></li>
+                        <li><a href="#">Certifications</a></li>
+                        <li><a href="#">Price List</a></li>
                     </ul>
                 </div>
                 <div class="f-col">
                     <h4>Contact</h4>
-                    <p>📍 2126, Road No. 2, GIDC Sachin, Surat - 394 230</p>
-                    <p>📞 +91-XXXX-XXX-XXXX</p>
-                    <p>✉️ info@meereand.com</p>
+                    <p>📍 Industrial Area, SIPCOT, Tamil Nadu, India</p>
+                    <p>📞 +91-987-654-3210</p>
+                    <p>✉️ sales@mangalamhdpe.com</p>
                     <div class="socials">
                         <span>in</span> <span>X</span> <span>ig</span>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>Copyright © 2025 Meera Industries Limited | All Rights Reserved</p>
+                <p>Copyright © 2026 Mangalam HDPE Pipes | All Rights Reserved</p>
                 <div class="f-links">
                     <span>Privacy Policy</span>
                     <span>Terms of Service</span>

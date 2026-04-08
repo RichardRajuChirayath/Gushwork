@@ -154,24 +154,18 @@ section {
 }
 
 .features-list li::before {
-    content: "";
+    content: "✓";
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 20px;
     height: 20px;
     background: #2A388F;
+    color: white;
+    font-size: 11px;
     border-radius: 50%;
     margin-right: 12px;
-    display: inline-block;
     flex-shrink: 0;
-    position: relative;
-}
-
-.features-list li::after {
-    content: "✓";
-    position: absolute;
-    color: white;
-    font-size: 10px;
-    left: 29px; /* Manual adjustment base on context */
-    display: none; /* Hide if only solid dot needed */
 }
 
 /* Updated List Dots to match Image 1 */
@@ -254,10 +248,78 @@ section {
 }
 .thumb.active { border: 2px solid #2A388F; }
 
-/* --- Specs Table Refinement --- */
-.specs-table { width: 100%; border-collapse: collapse; margin-top: 40px; }
-.specs-table th { text-align: left; padding: 24px; background: rgba(255,255,255,0.05); color: #94A3B8; font-size: 12px; letter-spacing: 1px; }
-.specs-table td { padding: 20px 24px; border-bottom: 1px solid rgba(255,255,255,0.1); color: white; font-weight: 500; }
+/* --- Specs Table --- */
+.tech-specs {
+    background-color: #0F172A; /* Dark navy */
+    padding: 100px 0;
+}
+
+.tech-specs h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.tech-specs .section-header p {
+    color: #94A3B8;
+    max-width: 600px;
+    margin-bottom: 60px;
+}
+
+.table-container {
+    background: #1E293B;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specs-table th {
+    background: #334155;
+    color: #94A3B8;
+    text-align: left;
+    padding: 18px 32px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.specs-table td {
+    padding: 22px 32px;
+    border-bottom: 1px solid #334155;
+    color: #F1F5F9;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.specs-table tr:last-child td {
+    border-bottom: none;
+}
+
+.btn-download {
+    background: transparent;
+    border: 1px solid #CBD5E0;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 auto;
+}
+
+.btn-download:hover {
+    background: rgba(255,255,255,0.05);
+}
+
 
 /* --- App Cards --- */
 .apps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }

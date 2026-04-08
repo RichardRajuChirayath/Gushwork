@@ -1193,6 +1193,13 @@ section {
     align-items: center;
 }
 
+.badge-logo {
+    height: 18px;
+    width: auto;
+    object-fit: contain;
+    margin-right: 8px;
+}
+
 .proc-nav {
     position: absolute;
     bottom: 20px;

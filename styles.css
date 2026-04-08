@@ -1257,6 +1257,161 @@ section {
     transform: scale(1.05);
 }
 
+/* --- Portfolio Section --- */
+.portfolio-section {
+    padding: 100px 0;
+    background: #F8FAFC;
+}
+
+.serif-title {
+    font-family: 'Outfit', sans-serif; /* High-quality modern heading */
+    font-size: 40px;
+    font-weight: 800;
+    color: #0F172A;
+    margin-bottom: 20px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.portfolio-card {
+    background: white;
+    border: 1px solid #E2E8F0;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.portfolio-card h3 {
+    font-size: 24px;
+    color: #0F172A;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.portfolio-card p {
+    color: #64748B;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.portfolio-card .card-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.portfolio-card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-learn-more {
+    width: 100%;
+    padding: 14px;
+    background: #F1F5F9;
+    border: none;
+    border-radius: 12px;
+    color: #2A388F;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-learn-more:hover {
+    background: #E2E8F0;
+}
+
+/* --- Portfolio Help Bar --- */
+.portfolio-help-bar {
+    margin-top: 60px;
+    background: white;
+    border: 1px solid #E2E8F0;
+    border-radius: 20px;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.help-text h3 {
+    font-size: 24px;
+    color: #0F172A;
+    margin-bottom: 5px;
+}
+
+.help-text h3 span {
+    color: #2A388F;
+}
+
+.help-text p {
+    color: #64748B;
+}
+
+.btn-expert {
+    background: #2A388F;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-expert:hover {
+    background: #1E2A78;
+}
+
+.trusted-by-section p {
+    color: #64748B;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.logo-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.logo-row img {
+    height: 35px;
+    width: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8;
+}
+
+.logo-row img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
 /* --- Price Range Card --- */
 .price-range-card {
     background: white;
